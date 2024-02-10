@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+    <title>Page Title</title>
+    <script>
+        function Show(){
+            let x=8;
+            let m=6;
+            let r=4;
+            let s=1;
+            let I=document.f1.t5.value;
+            let a=(x*document.f1.t1.value)+(m*document.f1.t2.value)+(r*document.f1.t3.value)+(s*document.f1.t4.value);
+            if(a==I)
+            {
+                 document.f1.t6.value=a;
+            }
+            else
+            {
+                alert("Tray anathor value");
+            }
+
+        }
+    </script>
+    
+</head>
+<body>
+    <center>
+        <h4>>Pieces in large pizza- 8</h4> 
+        <h4>> Pieces in Medium pizza- 6</h4> 
+        <h4>>Pieces in Regular Pizza-4</h4> 
+        <h4>>Pieces in Small Pizza-1</h4> 
+       
+    <form name="f1">
+        <label>Number of Childrens:</label><input type="text" name="t5" value=""><br>
+        <label>Large Pizza :</label><input type="text" name="t1" value=""><br>
+        <label>Medium Pizza :</label><input type="text" name="t2" value=""><br>
+        <label>Regular Pizza :</label><input type="text" name="t3" value=""><br>
+        <label>Small Pizza :</label><input type="text" name="t4" value=""><br>
+        <input type="text" name="t6" value="">
+    </form>
+    <input type="button" onclick="Show()" value="Show"><br><br>
+   
+</center>
+</body>
+</html>
